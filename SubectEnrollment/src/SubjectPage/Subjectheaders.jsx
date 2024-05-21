@@ -58,7 +58,7 @@ function Subjectheaders(props) {
                </ul>
             </div>
             <div className="md:pt-5 pt-4 text-center">
-            <NavLink  to={`/forms/${props.object.Name}` } >
+            <NavLink reloadDocument  to={`/forms/${props.object.Name}` } >
               <button className=" py-3 px-12 bg-yellow-400 text-xl font-bold rounded hover:bg-orange-49 text-black
               relative transition-colors before:absolute before:top-0 
              before:left-0 z-10 before:z-[-1] before:h-full before:w-full before:origin-bottom-left

@@ -14,7 +14,7 @@ function AboutCources(props) {
             <li>This course will help you move past those obstacles and become a time management ninja!</li>
             <li>Through pre-recorded videos, live sessions, notes, and exercises filled with frameworks, hacks, and mental models, this course will CHANGE the way you look at time.</li>
           </ul>
-          <NavLink  to={`/forms/${props.object.state.obj.price}` } state={{obj:props.object}}>
+          <NavLink reloadDocument  to={`/forms/${props.object.state.obj.price}` } state={{obj:props.object}}>
           <div className='bg-orange-600 rounded-xl px-8 py-2 text-xl font-bold text-white mt-10 cursor-pointer hover:bg-orange-400'>Enroll Now</div>
           </NavLink>
        </section>

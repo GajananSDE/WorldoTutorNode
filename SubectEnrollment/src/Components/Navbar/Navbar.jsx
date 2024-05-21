@@ -27,22 +27,22 @@ function Navbar() {
       <nav className="fixed top-0 right-0 w-72 overflow-y-scroll h-[100vh] z-[999] bg-white flex flex-col visible  ">
        <div className="mb-4 pt-6 cursor-pointer text-red-500 text-2xl font-bold w-3 px-5" onClick={handleChange}>&#10140;</div>
       <ul className="flex flex-col rlative w-full border-t-2">
-        <NavLink   to="/">
+        <NavLink reloadDocument   to="/">
         <li className="text-[1.1rem] border-b-2 px-6 py-1 font-[400] cursor-pointer"  onClick={closeWindow}>Home</li>
         </NavLink>
-        <NavLink   to="/commingsoon" onClick={closeWindow}>
+        <NavLink reloadDocument   to="/commingsoon" onClick={closeWindow}>
         <li className="text-[1.1rem] border-b-2 px-6 py-1 font-[400] cursor-pointer">About Us</li>
         </NavLink>
-        <NavLink   to="/commingsoon" onClick={closeWindow}>
+        <NavLink reloadDocument   to="/commingsoon" onClick={closeWindow}>
         <li className="text-[1.1rem] border-b-2 px-6 py-1 font-[400] cursor-pointer">Find Tutors</li>
         </NavLink>
-        <NavLink   to="/commingsoon" onClick={closeWindow}>
+        <NavLink reloadDocument   to="/commingsoon" onClick={closeWindow}>
         <li className="text-[1.1rem] border-b-2 px-6 py-1 font-[400] cursor-pointer">Curriculum</li>
         </NavLink>
-        <NavLink   to="/commingsoon" onClick={closeWindow}>
+        <NavLink reloadDocument   to="/commingsoon" onClick={closeWindow}>
         <li className="text-[1.1rem] border-b-2 px-6 py-1 font-[400] cursor-pointer">Events</li>
         </NavLink>
-        <NavLink   to="/commingsoon" onClick={closeWindow}>
+        <NavLink reloadDocument   to="/commingsoon" onClick={closeWindow}>
         <li className="text-[1.18rem] border-b-2 px-6 py-1 font-[400] cursor-pointer">Blog</li>
         </NavLink>
 
@@ -70,7 +70,7 @@ function Navbar() {
     <div>
       <nav className={scroll? " w-full h-[6rem] bg-white flex items-center fixed  justify-between px-4  z-50":" flex-wrap  w-full h-[6rem] bg-white  flex items-center relative justify-between px-3 z-50"}>
         <div id="logo" className="flex gap-x-7 ">
-          <NavLink  reloadDocument to="/">
+          <NavLink reloadDocument  to="/">
             <img
               src="https://www.worldotutor.com/assets/images/logo.png"
               alt=""
@@ -79,22 +79,22 @@ function Navbar() {
         
           <div className="lg:flex justify-center items-center  hidden">
           <ul className="flex justify-center items-center gap-7">
-          <NavLink  reloadDocument to="/">
+          <NavLink reloadDocument   to="/">
           <li className="text-[1.18rem] font-[400] cursor-pointer">Home</li>
           </NavLink>
-          <NavLink  reloadDocument to="/commingsoon">
+          <NavLink reloadDocument   to="/commingsoon">
           <li className="text-[1.18rem] font-[400] cursor-pointer">About Us</li>
           </NavLink>
-          <NavLink  reloadDocument to="/commingsoon">
+          <NavLink reloadDocument  to="/commingsoon">
           <li className="text-[1.18rem] font-[400] cursor-pointer">Find Tutors</li>
           </NavLink>
-          <NavLink  reloadDocument to="/commingsoon">
+          <NavLink reloadDocument   to="/commingsoon">
           <li className="text-[1.18rem] font-[400] cursor-pointer">Curriculum</li>
           </NavLink>
-          <NavLink  reloadDocument to="/commingsoon">
+          <NavLink reloadDocument  to="/commingsoon">
           <li className="text-[1.18rem] font-[400] cursor-pointer">Events</li>
           </NavLink>
-          <NavLink  reloadDocument to="/commingsoon">
+          <NavLink reloadDocument  to="/commingsoon">
           <li className="text-[1.18rem] font-[400] cursor-pointer">Blog</li>
           </NavLink>
           

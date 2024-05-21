@@ -15,7 +15,7 @@ function Dataitems(props) {
                { <div className='text-md font-bold pb-2 underline'>{props.Time}</div>
               }
              </div>
-             <NavLink  to={`/${props.Name}/${props.Name}` }>
+             <NavLink reloadDocument  to={`/${props.Name}/${props.Name}` }>
             <div className='w-full py-2 text-black bg-[#fad902] text-center text-xl font-bold cursor-pointer  text-[1.25rem]  
              relative transition-colors before:absolute before:top-0 
              before:left-0 z-10 before:z-[-1] before:h-full before:w-full before:origin-bottom-left

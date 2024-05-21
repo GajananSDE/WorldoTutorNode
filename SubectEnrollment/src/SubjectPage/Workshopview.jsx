@@ -49,7 +49,7 @@ function Workshopview(props) {
           </li>
         </ul>
         <div className="md:pt-16 py-4 pb-8 text-black">
-          <NavLink to={`/forms/${props.object.Name}`}>
+          <NavLink reloadDocument to={`/forms/${props.object.Name}`}>
             <button className="py-4 px-16 bg-yellow-400 text-xl font-bold rounded  relative transition-colors before:absolute before:top-0 
             before:left-0 z-10 before:z-[-1] before:h-full before:w-full before:origin-bottom-left
              before:scale-x-0 before:bg-yellow-300 before:rounded-xl before:transition-transform before:duration-300 

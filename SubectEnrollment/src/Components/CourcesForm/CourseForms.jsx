@@ -115,7 +115,7 @@ function CourseForms() {
   };
   const handlepaymentVerify = async (items) => {
     const options = {
-      key: "rzp_live_MY1tpNgK6hKGzj",x  
+      key: "rzp_live_MY1tpNgK6hKGzj",
       // "rzp_test_uagAw643g9theS",
       // rzp_live_MY1tpNgK6hKGzj",
       amount: items.amount,

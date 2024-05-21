@@ -13,7 +13,7 @@ function CourseForms() {
   React.useEffect(() => {
      try {
       fetch(
-        `http://localhost:3000/api/course/detail/${param.Name}`
+        `https://worldotutornode.onrender.com/api/course/detail/${param.Name}`
       )
         .then((data) => {
           return data.json();
@@ -53,7 +53,7 @@ function CourseForms() {
     try {
       console.log("data is->", data);
       const res = await fetch(
-        "http://localhost:3000/api/formsdetail/form",
+        "https://worldotutornode.onrender.com/api/formsdetail/form",
         {
           method: "POST",
           headers: {
@@ -94,7 +94,7 @@ function CourseForms() {
     const price = cources.price;
     try {
       const res = await fetch(
-        "http://localhost:3000/api/payment/order",
+        "https://worldotutornode.onrender.com/api/payment/order",
         {
           method: "POST",
           headers: {
@@ -115,7 +115,8 @@ function CourseForms() {
   };
   const handlepaymentVerify = async (items) => {
     const options = {
-      key: "rzp_test_uagAw643g9theS",
+      key: "rzp_live_MY1tpNgK6hKGzj",x  
+      // "rzp_test_uagAw643g9theS",
       // rzp_live_MY1tpNgK6hKGzj",
       amount: items.amount,
       currency: items.currency,
@@ -126,7 +127,7 @@ function CourseForms() {
       handler:async  (response) => {
            try {
           const res = await fetch(
-            "http://localhost:3000/api/payment/verify",
+            "https://worldotutornode.onrender.com/api/payment/verify",
             {
               method: "POST",
               headers: {

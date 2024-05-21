@@ -11,7 +11,7 @@ function SubjectHome() {
   const [cources,setCourses] = useState([])
   useEffect(()=>{
     try{
-          fetch(`http://localhost:3000/api/course/detail/${param.Name}`).then((data)=>{
+          fetch(`https://worldotutornode.onrender.com/api/course/detail/${param.Name}`).then((data)=>{
                return data.json();
           }).then((data)=>{
             // console.log(data)

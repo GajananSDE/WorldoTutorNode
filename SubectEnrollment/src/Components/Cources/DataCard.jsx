@@ -10,7 +10,7 @@ function DataCard() {
   
   useEffect(()=>{
     try{
-          fetch("http://localhost:3000/api/course/data").then((data)=>{
+          fetch("https://worldotutornode.onrender.com/api/course/data").then((data)=>{
                return data.json();
           }).then((data)=>{
             // console.log(data)

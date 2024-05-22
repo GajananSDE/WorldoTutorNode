@@ -32,7 +32,7 @@ function Header() {
                   <div>
                   <img src={banner} alt="" className="h-auto max-w-full align-middle"/>
                   </div>
-                  <AnchorLink>
+                  <AnchorLink href="#courses">
                   <div id="button" className=" text-center my-4">
                   <button className="bg-yellow-400 py-2 px-16 font-medium text-2xl inline-block">All Workshop</button>
                   </div>
@@ -60,7 +60,7 @@ function Header() {
              <div className="relative">
                 <img src={banner} alt="" className=" h-[26rem]  w-[550px] relative align-middle " />
              </div>
-             <AnchorLink>
+             <AnchorLink href="#courses">
              <div id="button" className=" text-center my-4">
              <button className="bg-yellow-400 py-2 px-16 font-medium text-2xl inline-block">All Workshop</button>
              </div>

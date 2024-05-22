@@ -15,7 +15,7 @@ app.use("/api/payment",Payment)
 app.use("/api/course",Cource)
 app.use("/api/formsdetail",Forms)
 app.get("/*",(req,res)=>{
-    res.send(path.join(__dirname,'../SubectEnrollment/dist','index.html'))
+    res.send(path.join(__dirname,'../SubectEnrollment/dist'))
 })
 
 app.listen(process.env.PORT,()=>{

@@ -4,10 +4,10 @@ import creative from "../assets/Creative.png";
 const CourseData = [
   {
     id: 1,
-    Name: "Rubic",
+    Name: "Rubik",
     img: rubic,
     Time:"1st June, 6 PM | Saturday",
-    heading: "Rubic Cubes",
+    heading: "Rubik's Cubes",
     content:
       "Rubik’s cube (beginners) 3x3 learn whole cube within 1hours ",
     price: 99,
@@ -40,7 +40,7 @@ const CourseData = [
     Name:"communication",
     img: creative,
     Time:"2nd June, 9 AM| sunday",
-    heading:"Effective communication",
+    heading:"Effective Communication",
     content:
       "Learn the steps to communicate effectively and initiate conversations like a pro",
     price: 99,

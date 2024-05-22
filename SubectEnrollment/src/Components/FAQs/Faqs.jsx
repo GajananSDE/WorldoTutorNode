@@ -10,7 +10,7 @@ function Faqs(props) {
       <section>
       
           <li className="py-4 md:px-28">
-            <div className="text-xl font-bold py-4 gap-x-7 bg-gray-200 flex justify-between  items-center rounded-xl px-10 cursor-pointer shadow-xl" onClick={()=>setShow(!show)}> 
+            <div className="md:text-xl font-medium md:font-bold py-4 gap-x-7 bg-gray-200 flex justify-between  items-center rounded-xl px-10 cursor-pointer shadow-xl" onClick={()=>setShow(!show)}> 
             <h1>{props.Ques}</h1>
             {
               
@@ -19,7 +19,7 @@ function Faqs(props) {
             </div>
             {
               show &&
-              <div className="text-xl font-medium px-10 py-5 bg-white rounded-xl text-black ">
+              <div className="md:text-xl font-medium px-10 py-5 bg-white rounded-xl text-black ">
               {props.Ans}
               </div>
             }

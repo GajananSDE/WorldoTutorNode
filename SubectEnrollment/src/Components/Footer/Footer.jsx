@@ -52,8 +52,8 @@ function Footer() {
        </div>
        <div className='md:py-1 px-12 text-black'>
        <h1 className='text-2xl font-bold pb-4'>Subscribe</h1>
-       <input type="text" className='py-4 text-medium  w-[16rem] px-2 rounded' placeholder='Enter mail'/><br />
-       <button className='bg-orange-500 hover:bg-orange-300 hover:opacity-75s text-white px-16 text-2xl py-3 my-4 md:whitespace-nowrap rounded'>Submit Now</button>
+       <input type="text" className='py-4 text-medium  w-[16.9rem] px-2 rounded' placeholder='Enter mail'/><br />
+       <button className='bg-orange-500 hover:bg-orange-300 hover:opacity-75s text-white px-16 text-2xl py-3 my-4 whitespace-nowrap rounded'>Submit Now</button>
        </div>
      </section>
     <section className='py-10 border-t-2 w-full border-gray-700 '>

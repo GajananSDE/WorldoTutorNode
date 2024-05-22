@@ -325,6 +325,7 @@ function CourseForms() {
                   name="Phone"
                   className="text-xl h-10 px-4 bg-transparent "
                   type="tel"
+                   pattern="[0-9]{10,12}"
                   placeholder="Mobile Number"
                   value={data.Phone}
                   onChange={handleForm}

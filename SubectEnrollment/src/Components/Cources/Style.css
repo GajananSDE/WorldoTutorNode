@@ -1,0 +1,12 @@
+#header-form{
+    background-image:url('../../assets/paymentForm.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    /* padding: 70px 0; */
+    /* position: relative; */
+    /* padding-top: 10px; */
+    display: flex;
+    align-items: center;
+}

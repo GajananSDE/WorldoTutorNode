@@ -18,13 +18,13 @@ function Header() {
       <section className="relative  ">
       <div className=" py-10" id="header-form">
       <div id="container" className=" relative md:max-w-full max-w-[540px] w-full px-4 mx-auto " >
-      <div className="items-center relative flex -mx-4" id="banner">
-      <div id="col-md-6" className=" md:max-w-[50%] md:flex-[0,0,50%] relative w-full md:px-4 md:ml-16">
+      <div className="items-center relative flex -mx-4 py-4" id="banner">
+      <div id="col-md-6" className=" md:max-w-[100%] md:flex-[0,0,50%] relative w-full md:px- md:ml-16">
                 <div>
-                <div className="px-3">
-                <h1 className="font-bold md:text-7xl text-5xl text-white flex items-center"> Learn New Skills With world'o'tutor</h1>
+                <div className="md: px-5">
+                <h1 className="font-bold md:text-7xl text-3xl text-white flex items-center"> Learn New Skills With world'o'tutor</h1>
                 <div id="Date-Time" className=" my-9">
-                <h5 className="font-medium text-3xl text-white  py-5"> Workshops Designed To Help You Grow <br />And Master New Skills</h5>
+                <h5 className="font-medium md:text-[2.2rem] text-[2.5vmax] text-white  md:py-5"> Workshops Designed To Help You Grow And Master New Skills</h5>
                 </div>
                 </div>
                 
@@ -38,17 +38,17 @@ function Header() {
                   </div>
                   </AnchorLink>
                   </div>
-                  <div id="rows" className="flex flex-wrap px-3 -mx-4">
-                    <div className=" w-full md:flex-[0,0,50%] md:max-w-[50%] px-4">
-                     <div className="flex items-center relative">
-                     <img src={certi} alt="" className="max-w-[90%] h-auto align-middle"/>
-                     <p className=" z-[1] left-16 top-3 pl-9 w-52 h-16 flex items-center font-medium bg-gray-300 ">Get Certification by World'o'Tutor</p>
+                  <div id="rows" className="flex flex-wrap items-center justify-center px-3 mx-auto">
+                    <div className=" w-full md:flex-[0,0,50%] lg:max-w-[50%]  px-4 ">
+                     <div className="flex items-center justify-center relative">
+                     <img src={certi} alt="" className=" max-w-[80%] h-auto align-middle"/>
+                     <p className=" z-[1] left-16 top-5 px-6 w-52 h-16 flex items-center whitespace-nowrap font-medium bg-white overflow-visible ">Get Certification <br /> by  World'o'Tutor</p>
                      </div>
                     </div>
-                    <div className="relative w-full flex-[0,0,50%] md:max-w-[50%] px-6 pt-2 md:pt-0">
-                     <div className="flex items-center relative">
-                     <img src={timer} alt="" className="max-w-full h-auto align-middle"/>
-                     <p className=" z-[1] left-16 top-3 pl-9 w-52 h-16 flex items-center font-medium bg-gray-300 ">Limited Seats Aviilable</p>
+                    <div className=" w-full md:flex-[0,0,50%] lg:max-w-[50%]  px-4">
+                     <div className="flex items-center justify-center relative">
+                     <img src={timer} alt="" className="max-w-[80%] h-auto align-middle"/>
+                     <p className=" z-[1] left-16 top-3 pl-9 w-52 h-16 flex items-center font-medium bg-white ">Limited Seats Aviilable</p>
                      </div>
                      
                     </div>

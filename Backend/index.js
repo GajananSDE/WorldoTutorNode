@@ -7,6 +7,7 @@ const path = require('path')
 require('dotenv').config()
 require('./Mongoose/config')
 const crypto = require('crypto')
+
 const app = express();
 app.use(express.static(path.join(__dirname,'../SubectEnrollment/dist')))
 app.use(cors())
@@ -15,9 +16,10 @@ app.use("/api/payment",Payment)
 app.use("/api/course",Cource)
 app.use("/api/formsdetail",Forms)
 app.get("/*",(req,res)=>{
-    res.send(path.join(__dirname,'../SubectEnrollment/dist'))
+    res.sendFile(path.join(__dirname,'../SubectEnrollment/dist','index.html'))
 })
 
 app.listen(process.env.PORT,()=>{
     console.log(`Server Running on ${process.env.PORT}`)
 })
+    

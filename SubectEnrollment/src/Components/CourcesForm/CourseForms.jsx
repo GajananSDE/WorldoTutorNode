@@ -286,14 +286,14 @@ function CourseForms() {
         <form action="" ref={form} onSubmit={Onsubmit} className=" flex flex-col  flex-wrap justify-center  md:w-1/2 lg:w-1/2 bg-white  shadow-xl w-11/12 pt-6 rounded-xl overflow-hidden">
         <h1 className=" text-3xl font-medium px-4 py-6"> Payment Details <p className="content-['']  w-16 border-[3px] rounded border-yellow-400 my-2"></p></h1>
           <div className="flex flex-wrap md:mb-7 mb-3 justify-center  items-center ">
-          <div className="text-xl font-medium  w-48 flex items-start ">Amount</div>
+          <div className="text-xl font-medium  w-48 md:flex items-start hidden  ">Amount</div>
           <div className="border-2 border-black ">
           <input required
                 className="text-xl h-10 px-4 bg-transparent " type="text" value={cources.price} disabled />
               </div>
               </div>
               <div className="flex flex-wrap md:mb-7 mb-3 justify-center items-center ">
-              <div  className="text-xl font-medium  w-48 flex items-start   ">Parent`s Name</div>
+              <div  className="text-xl font-medium  w-48 md:flex items-start hidden    ">Parent`s Name</div>
               <div className="border-2 border-black ">
               <input required
                 className="text-xl h-10 px-4 bg-transparent "
@@ -306,7 +306,7 @@ function CourseForms() {
               </div>
               </div>
               <div className="flex flex-wrap md:mb-7 mb-3 justify-center items-center ">
-              <div className="text-xl font-medium  w-48 flex items-start  ">Email</div>
+              <div className="text-xl font-medium  w-48 md:flex items-start hidden   ">Email</div>
               <div className="border-2 border-black ">
                 <input required
                   name="ParentEmail"
@@ -319,7 +319,7 @@ function CourseForms() {
                   </div>
                   </div>
                   <div className="flex flex-wrap md:mb-7 mb-3 justify-center items-center ">
-                  <div className="text-xl font-medium  w-48 flex items-start  ">Mobile Number</div>
+                  <div className="text-xl font-medium  w-48 md:flex items-start hidden   ">Mobile Number</div>
                   <div className="border-2 border-black ">
                   <input required
                   name="Phone"
@@ -333,7 +333,7 @@ function CourseForms() {
               </div>
             </div>
             <div className="flex flex-wrap md:mb-7 mb-3 justify-center items-center ">
-              <div className="text-xl font-medium  w-48 flex items-start  ">Child Name</div>
+              <div className="text-xl font-medium  w-48 md:flex items-start hidden   ">Child Name</div>
               <div className="border-2 border-black ">
               <input required
               name="ChildName"
@@ -346,14 +346,14 @@ function CourseForms() {
               </div>
               </div>
               <div className="flex flex-wrap  mb-3 justify-center items-center ">
-              <div className="text-xl font-medium  w-48 flex items-start  "> Cource Name</div>
+              <div className="text-xl font-medium  w-48 md:flex items-start hidden   "> Cource Name</div>
               <div className="border-2 border-black ">
               <input required
               className="text-xl h-10 px-4 bg-transparent " type="text" value={param.Name}  disabled/>
               </div>
               </div>
               <div className="flex flex-wrap md:mb py-2 justify-evenly items-center bg-gray-100 ">
-              <div className="text-xl font-medium  w-64 flex items-start ">
+              <div className="text-xl font-medium  w-64 flex items-start md:pt-0 md:pb-0 m pb-5 pt-2">
                 <img src="https://cdn.razorpay.com/static/assets/pay_methods_branding.png" alt="" />
               </div>
               <button

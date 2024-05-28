@@ -31,7 +31,7 @@ function DataCard() {
     
     {
       CourseData.map((item)=>{
-        return <Dataitems key={item._id} desc={item.heading} content={item.content} img={item.img} price={item.price} Name={item.Name} Time={item.Time}/>
+        return <Dataitems key={item.id} desc={item.heading} content={item.content} img={item.img} price={item.price} Name={item.Name} Time={item.Time}/>
       })
     }
     </article>

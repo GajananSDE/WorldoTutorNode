@@ -1,5 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import {loadStripe} from '@stripe/stripe-js';
@@ -72,20 +73,42 @@ function CourseForms() {
 
   const sendEmail = () => {
     console.log("running");
-    emailjs
-      .sendForm("service_g9djofd", "template_hzb7xfd", form.current, {
-        publicKey: "721wEpVCHcrSRtlWU",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          alert("Message Sent on you Email ");
+    // emailjs
+    //   .sendForm("service_g9djofd", "template_hzb7xfd", form.current, {
+    //     publicKey: "721wEpVCHcrSRtlWU",
+    //   })
+    //   .then(
+    //     () => {
+    //       console.log("SUCCESS!");
+    //       alert("Message Sent on you Email ");
+    //     },
+    //     (error) => {
+    //       console.log("FAILED...", error.text);
+    //       alert("Sending Failed Connect to Admin  ");
+    //     }
+    //   );
+    try{
+  
+    const res =  fetch("http://localhost:5000/api/emailsend/email",{
+        method:"POST",
+        headers:{
+          "Content-type":"application/json",
+
         },
-        (error) => {
-          console.log("FAILED...", error.text);
-          alert("Sending Failed Connect to Admin  ");
-        }
-      );
+        body:JSON.stringify({
+            cources,
+            data
+        })
+      });
+      // if(res.status === 200){
+      //   alert("Detail Send Your Mail")
+      // }else{
+      //   alert("if Detail Not be Recieved the Connect me")
+      // }
+     console.log("mail status ",res.status)
+      }catch(err){
+    console.log(err)
+  }
   };
 
   const handlepayment = async () => {
@@ -94,7 +117,8 @@ function CourseForms() {
     const price = cources.price;
     try {
       const res = await fetch(
-        "https://worldotutornode.onrender.com/api/payment/order",
+        // "https://worldotutornode.onrender.com/api/payment/order",
+        "http://localhost:5000/api/payment/order",
         {
           method: "POST",
           headers: {
@@ -115,7 +139,7 @@ function CourseForms() {
   };
   const handlepaymentVerify = async (items) => {
     const options = {
-      key: "rzp_live_MY1tpNgK6hKGzj",
+      key: "rzp_test_uagAw643g9theS",
       // "rzp_test_uagAw643g9theS",
       // rzp_live_MY1tpNgK6hKGzj",
       amount: items.amount,
@@ -127,7 +151,9 @@ function CourseForms() {
       handler:async  (response) => {
            try {
           const res = await fetch(
-            "https://worldotutornode.onrender.com/api/payment/verify",
+            // "https://worldotutornode.onrender.com/api/payment/verify",
+            "http://localhost:5000/api/payment/verify",
+            
             {
               method: "POST",
               headers: {
@@ -190,7 +216,9 @@ function CourseForms() {
     e.preventDefault();
      handlepayment();
     // makePayment()
+    // sendEmail();
     setAmount(cources.price);
+    console.log(form.current)
   };
   return (
     <div className="relative" >
@@ -293,7 +321,7 @@ function CourseForms() {
               </div>
               </div>
               <div className="flex flex-wrap md:mb-7 mb-3 justify-center items-center ">
-              <div  className="text-xl font-medium  w-48 md:flex items-start hidden    ">Parent`s Name</div>
+              <div  className="text-xl font-medium  w-48 md:flex items-start hidden    ">Parent's Name</div>
               <div className="border-2 border-black ">
               <input required
                 className="text-xl h-10 px-4 bg-transparent "
@@ -346,10 +374,10 @@ function CourseForms() {
               </div>
               </div>
               <div className="flex flex-wrap  mb-3 justify-center items-center ">
-              <div className="text-xl font-medium  w-48 md:flex items-start hidden   "> Cource Name</div>
+              <div className="text-xl font-medium  w-48 md:flex items-start hidden   "> Course Name</div>
               <div className="border-2 border-black ">
               <input required
-              className="text-xl h-10 px-4 bg-transparent " type="text" value={param.Name}  disabled/>
+              className="text-xl h-10 px-4 bg-transparent " name="CourseName" type="text" value={param.Name}  disabled/>
               </div>
               </div>
               <div className="flex flex-wrap md:mb py-2 justify-evenly items-center bg-gray-100 ">

@@ -61,9 +61,9 @@ function Navbar() {
             </li>
           </NavLink>
          
-            <li className="text-[1.1rem]  border-b-2 px-6 py-1 font-[400] cursor-pointer" onClick={()=>setCurriculum(!curriculum)}>
+            <li className="text-[1.1rem]  border-b-2 px-6 py-1 font-[400] cursor-pointer" >
              <button> Curriculum  </button> 
-             <ul className={curriculum ? " bg-white  " : "hidden"}>
+             <ul >
              <NavLink to="https://www.worldotutor.com/pages/curriculum-aptitude">
                <li className="py-2 hover:bg-orange-500 border-[0.01px] px-7">
                  Aptitude & Reasoning
@@ -233,11 +233,15 @@ function Navbar() {
               </NavLink>
 
               <li
-                className="text-[1.18vmax] whitespace-nowrap font-[400] cursor-pointer"
-                onClick={() => setCurriculum(!curriculum)}
+                className="text-[1.18vmax] whitespace-nowrap font-[400] cursor-pointer relative"
+                   id="dropdown"
               >
                 <buttom>Curriculum</buttom>
-                <ul className={curriculum ? "absolute bg-white  " : "hidden"}>
+                <ul className=
+              
+                "absolute hidden bg-white"
+                id="dropdown-menu"
+                >
                   <NavLink to="https://www.worldotutor.com/pages/curriculum-aptitude">
                     <li className="py-2 hover:bg-orange-500 border-[0.01px] px-7">
                       Aptitude & Reasoning

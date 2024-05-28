@@ -37,7 +37,7 @@ const CourseData = [
   },
   {
     id: 3,
-    Name:"communication",
+    Name:"Communication",
     img: creative,
     Time:"2nd June, 9 AM| sunday",
     heading:"Effective Communication",

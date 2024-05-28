@@ -1,3 +1,6 @@
 #float-right{
     float:right !important;
 }
+#dropdown:hover  #dropdown-menu{
+    display: block !important;
+} 

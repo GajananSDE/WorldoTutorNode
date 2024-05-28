@@ -117,8 +117,8 @@ function CourseForms() {
     const price = cources.price;
     try {
       const res = await fetch(
-        // "https://worldotutornode.onrender.com/api/payment/order",
-        "http://localhost:5000/api/payment/order",
+        "https://worldotutornode.onrender.com/api/payment/order",
+       // "http://localhost:5000/api/payment/order",
         {
           method: "POST",
           headers: {
@@ -139,7 +139,7 @@ function CourseForms() {
   };
   const handlepaymentVerify = async (items) => {
     const options = {
-      key: "rzp_test_uagAw643g9theS",
+      key: "rzp_live_MY1tpNgK6hKGzj",
       // "rzp_test_uagAw643g9theS",
       // rzp_live_MY1tpNgK6hKGzj",
       amount: items.amount,
@@ -151,8 +151,8 @@ function CourseForms() {
       handler:async  (response) => {
            try {
           const res = await fetch(
-            // "https://worldotutornode.onrender.com/api/payment/verify",
-            "http://localhost:5000/api/payment/verify",
+             "https://worldotutornode.onrender.com/api/payment/verify",
+           // "http://localhost:5000/api/payment/verify",
             
             {
               method: "POST",

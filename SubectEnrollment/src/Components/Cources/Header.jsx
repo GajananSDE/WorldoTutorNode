@@ -22,8 +22,8 @@ function Header() {
       <div id="col-md-6" className=" md:max-w-[100%] md:flex-[0,0,50%] relative w-full md:px- md:ml-16">
                 <div>
                 <div className="md: px-5">
-                <h1 className="font-bold md:text-7xl text-3xl text-white flex items-center"> Learn New Skills With world'o'tutor</h1>
-                <div id="Date-Time" className=" my-9">
+                <h1 className="font-bold md:text-7xl text-[2rem] text-white flex items-center"> Learn New Skills With world'o'tutor</h1>
+                <div id="Date-Time" className=" md:my-9 mt-5">
                 <h5 className="font-medium md:text-[2.2rem] text-[2.5vmax] text-white  md:py-5"> Workshops Designed To Help You Grow And Master New Skills</h5>
                 </div>
                 </div>
